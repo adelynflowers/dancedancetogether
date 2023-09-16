@@ -1,13 +1,20 @@
 """Driver file for DanceDanceTogether.
 """
-from dancedancetogether.controllers import register_event_loop
+from dancedancetogether.controllers import JoystickManager
+from loguru import logger
 
 
+def print_input(joy, key):
+    print(f"Joystick {joy.identifier} pressed {key.name}")
+
+
+@logger.catch
 def main():
     """
     Entrypoint, does nothing.
     """
-    register_event_loop()
+    joystick_manager = JoystickManager()
+    joystick_manager.register_callback(print_input)
     while True:
         ...
 
