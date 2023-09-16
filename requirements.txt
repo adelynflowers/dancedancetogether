@@ -1,0 +1,1 @@
+pyjoystick==1.2.4
