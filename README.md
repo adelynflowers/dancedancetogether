@@ -7,3 +7,8 @@ DanceDanceTogether helps make playing with two players in [Project Outfox](https
 3. Launch project outfox
 
 Simply configure your outfox location and controller mappings, replace your project outfox shortcut with a shortcut to DanceDanceTogether instead, and enjoy correct mappings every time you play.
+
+## Version 0.1 Checklist
+- [ ] Identify joystick inputs on linux
+- [ ] Prompt the user to choose between them for P1/P2
+- [ ] Write corresponding hardcoded keymappings into a dummy config file in the project outfox format
