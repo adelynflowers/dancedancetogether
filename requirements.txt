@@ -1,1 +1,2 @@
 pyjoystick==1.2.4
+loguru==0.7.2
