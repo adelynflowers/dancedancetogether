@@ -1,6 +1,7 @@
 """Driver file for DanceDanceTogether.
 """
 from dancedancetogether.controllers import JoystickManager
+from dancedancetogether.app import DDTApp
 from loguru import logger
 
 
@@ -13,10 +14,8 @@ def main():
     """
     Entrypoint, does nothing.
     """
-    joystick_manager = JoystickManager()
-    joystick_manager.register_callback(print_input)
-    while True:
-        ...
+    ddt = DDTApp()
+    ddt.run()
 
 
 if __name__ == "__main__":

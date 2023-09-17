@@ -1,3 +1,5 @@
 pyjoystick==1.2.4
 loguru==0.7.2
 pysdl2-dll==2.28.2
+textual==0.37.1
+textual-dev==1.1.0
